@@ -1,14 +1,4 @@
-# Launch the Gemini interface
-allora gemini
-
-# Launch with color disabled
-allora gemini --color=false
-
-# Launch with auto-export
-allora gemini --export=my_conversation.json
-
-# Show help
-allora gemini --helppackage agents
+package agents
 
 import (
 	"context"
@@ -731,17 +721,7 @@ func (m *MonitoringAgent) generateMonitoringSuggestions(query string) []string {
 		"Create monitoring dashboards",
 		"Implement SLO tracking",
 	}
-}# Launch the Gemini interface
-allora gemini
-
-# Launch with color disabled
-allora gemini --color=false
-
-# Launch with auto-export
-allora gemini --export=my_conversation.json
-
-# Show help
-allora gemini --help
+}
 
 func (m *MonitoringAgent) generateMonitoringActions(query string) []Action {
 	return []Action{
