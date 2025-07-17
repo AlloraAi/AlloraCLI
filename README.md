@@ -218,11 +218,18 @@ sudo mv allora /usr/local/bin/
      
      #run the command
     .\allora.exe -version
+             or
+    .\allora -version
     #output: "allora version 1.0.0 " congrats you install alloracli
     
     #run command
-    .\allora.exe init    # initialize the cli
-    .\allora.exe --help  # help commands
+    .\allora.exe init
+            or
+    .\allora init       # initialize the cli
+
+    .\allora.exe --help
+          or
+    .\allora --help     # help commands
     
     # For detailed setup, see WINDOWS_INSTALLATION.md
 
