@@ -234,7 +234,7 @@ sudo mv allora /usr/local/bin/
     # For detailed setup, see WINDOWS_INSTALLATION.md
 
  ```powershell
-    ```
+```
 
 ### Install from Source
 
