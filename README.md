@@ -8,7 +8,7 @@
 [![Go Version](https://img.shields.io/badge/Go-1.23%2B-blue)](https://golang.org/)
 [![Release](https://img.shields.io/github/v/release/AlloraAi/AlloraCLI)](https://github.com/AlloraAi/AlloraCLI/releases)
 [![Go Report Card](https://goreportcard.com/badge/github.com/AlloraAi/AlloraCLI)](https://goreportcard.com/report/github.com/AlloraAi/AlloraCLI)
-[![CI/CD](https://github.com/AlloraAi/AlloraCLI/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/AlloraAi/AlloraCLI/actions)
+
 
 <div align="center">
   <h1>🤖 AI-Powered Infrastructure Management</h1>
