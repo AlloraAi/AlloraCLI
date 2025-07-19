@@ -4,7 +4,7 @@
   <img src="docs/header.png" alt="AlloraCLI Screenshot" width="100%" height="200"/>
 </p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Apache-2.0](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Go Version](https://img.shields.io/badge/Go-1.23%2B-blue)](https://golang.org/)
 [![Release](https://img.shields.io/github/v/release/AlloraAi/AlloraCLI)](https://github.com/AlloraAi/AlloraCLI/releases)
 [![Go Report Card](https://goreportcard.com/badge/github.com/AlloraAi/AlloraCLI)](https://goreportcard.com/report/github.com/AlloraAi/AlloraCLI)
