@@ -1,7 +1,7 @@
 # AlloraCLI
 
 <p align="center">
-  <img src="docs/header.png" alt="AlloraCLI Screenshot" width="100%" height="150"/>
+  <img src="docs/header.png" alt="AlloraCLI Screenshot" width="100%" height="200"/>
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -27,6 +27,10 @@
   </p>
 </div>
 
+<p align="center">
+  <img src="docs/demo.gif" alt="AlloraCLI Demo" width="80%" height="auto"/>
+</p>
+
 ---
 
 <p align="center">
@@ -45,9 +49,7 @@ aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" -
 allora ask "Show me all running EC2 instances with their names"
 ```
 
-<p align="center">
-  <img src="docs/demo.gif" alt="AlloraCLI Demo" width="100%" height="auto"/>
-</p>
+
 ### ⚡ Key Benefits
 
 | Traditional Tools              | AlloraCLI                    |
