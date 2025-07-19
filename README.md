@@ -1,5 +1,9 @@
 # AlloraCLI
 
+<p align="center">
+  <img src="docs/header.png" alt="AlloraCLI Screenshot" width="100%" height="150"/>
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Go Version](https://img.shields.io/badge/Go-1.23%2B-blue)](https://golang.org/)
 [![Release](https://img.shields.io/github/v/release/AlloraAi/AlloraCLI)](https://github.com/AlloraAi/AlloraCLI/releases)
@@ -24,6 +28,7 @@
 </div>
 
 ---
+
 <p align="center">
   Made with ❤️ by <a href="https://github.com/AlloraAi">AlloraAi</a>
 </p>
@@ -40,15 +45,18 @@ aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" -
 allora ask "Show me all running EC2 instances with their names"
 ```
 
+<p align="center">
+  <img src="docs/demo.gif" alt="AlloraCLI Demo" width="100%" height="auto"/>
+</p>
 ### ⚡ Key Benefits
 
-| Traditional Tools | AlloraCLI |
-|-------------------|-----------|
-| ❌ Multiple CLI tools to learn | ✅ One unified interface |
-| ❌ Complex syntax and flags | ✅ Natural language commands |
-| ❌ Manual troubleshooting | ✅ AI-powered diagnostics |
-| ❌ Reactive monitoring | ✅ Proactive insights |
-| ❌ Vendor lock-in | ✅ Multi-cloud support |
+| Traditional Tools              | AlloraCLI                    |
+| ------------------------------ | ---------------------------- |
+| ❌ Multiple CLI tools to learn | ✅ One unified interface     |
+| ❌ Complex syntax and flags    | ✅ Natural language commands |
+| ❌ Manual troubleshooting      | ✅ AI-powered diagnostics    |
+| ❌ Reactive monitoring         | ✅ Proactive insights        |
+| ❌ Vendor lock-in              | ✅ Multi-cloud support       |
 
 ## 🚀 Features
 
@@ -100,15 +108,15 @@ allora ask "Show me all running EC2 instances with their names"
 
 ### ✅ **Proven Benefits**
 
-| Traditional Approach | AlloraCLI Advantage | Impact |
-|---------------------|-------------------|---------|
-| Learn 5+ CLI tools (aws, az, gcloud, kubectl) | **One unified interface** | 80% faster onboarding |
-| Complex command syntax and flags | **Natural language queries** | 90% less syntax errors |
-| Manual troubleshooting and debugging | **AI-powered diagnostics** | 70% faster problem resolution |
-| Reactive monitoring and alerts | **Proactive AI insights** | 60% reduction in incidents |
-| Vendor-specific tools and workflows | **Multi-cloud unified management** | 50% operational overhead reduction |
-| Manual cost optimization | **Automated cost analytics** | 30% reduction in cloud spend |
-| Security and compliance gaps | **Built-in security scanning** | 40% improved compliance posture |
+| Traditional Approach                          | AlloraCLI Advantage                | Impact                             |
+| --------------------------------------------- | ---------------------------------- | ---------------------------------- |
+| Learn 5+ CLI tools (aws, az, gcloud, kubectl) | **One unified interface**          | 80% faster onboarding              |
+| Complex command syntax and flags              | **Natural language queries**       | 90% less syntax errors             |
+| Manual troubleshooting and debugging          | **AI-powered diagnostics**         | 70% faster problem resolution      |
+| Reactive monitoring and alerts                | **Proactive AI insights**          | 60% reduction in incidents         |
+| Vendor-specific tools and workflows           | **Multi-cloud unified management** | 50% operational overhead reduction |
+| Manual cost optimization                      | **Automated cost analytics**       | 30% reduction in cloud spend       |
+| Security and compliance gaps                  | **Built-in security scanning**     | 40% improved compliance posture    |
 
 ---
 
@@ -137,6 +145,7 @@ allora ask "Show me my cloud infrastructure status"
 </div>
 
 ---
+
 <p align="center">
   Made with ❤️ by <a href="https://github.com/AlloraAi">AlloraAi</a>
 </p>
@@ -145,32 +154,31 @@ allora ask "Show me my cloud infrastructure status"
 
 ### 📚 **User Documentation**
 
-| Document | Description | For Who |
-|----------|-------------|---------|
-| [📖 Complete Usage Guide](docs/usage.md) | 300+ page comprehensive manual covering all features | **New & Experienced Users** |
-| [⚙️ Configuration Reference](docs/configuration.md) | Detailed setup guide for all cloud providers and AI services | **System Administrators** |
-| [🚀 Getting Started](docs/getting-started.md) | Quick 10-minute setup tutorial | **First-time Users** |
-| [❓ FAQ](docs/faq.md) | Most common questions and detailed answers | **All Users** |
-| [🔍 Troubleshooting](docs/troubleshooting.md) | Common issues, solutions, and debugging tips | **Support & Operations** |
+| Document                                            | Description                                                  | For Who                     |
+| --------------------------------------------------- | ------------------------------------------------------------ | --------------------------- |
+| [📖 Complete Usage Guide](docs/usage.md)            | 300+ page comprehensive manual covering all features         | **New & Experienced Users** |
+| [⚙️ Configuration Reference](docs/configuration.md) | Detailed setup guide for all cloud providers and AI services | **System Administrators**   |
+| [🚀 Getting Started](docs/getting-started.md)       | Quick 10-minute setup tutorial                               | **First-time Users**        |
+| [❓ FAQ](docs/faq.md)                               | Most common questions and detailed answers                   | **All Users**               |
+| [🔍 Troubleshooting](docs/troubleshooting.md)       | Common issues, solutions, and debugging tips                 | **Support & Operations**    |
 
 ### 👨‍💻 **Developer Documentation**
 
-| Document | Description | For Who |
-|----------|-------------|---------|
+| Document                                      | Description                                        | For Who                     |
+| --------------------------------------------- | -------------------------------------------------- | --------------------------- |
 | [🏗️ Architecture Guide](docs/architecture.md) | System design, components, and technical deep-dive | **Developers & Architects** |
-| [📐 API Reference](docs/api.md) | Complete API documentation for all interfaces | **Integration Developers** |
-| [🔧 Plugin Development](docs/plugins.md) | Step-by-step plugin creation and examples | **Plugin Developers** |
-| [🧪 Development Guide](docs/development.md) | Setup development environment and contribute | **Contributors** |
+| [📐 API Reference](docs/api.md)               | Complete API documentation for all interfaces      | **Integration Developers**  |
+| [🔧 Plugin Development](docs/plugins.md)      | Step-by-step plugin creation and examples          | **Plugin Developers**       |
+| [🧪 Development Guide](docs/development.md)   | Setup development environment and contribute       | **Contributors**            |
 
 ### 🌟 **Community Resources**
 
-| Resource | Description | Purpose |
-|----------|-------------|---------|
-| [💬 GitHub Discussions](https://github.com/AlloraAi/AlloraCLI/discussions) | Community Q&A, feature requests, showcases | **Community Support** |
-| [🐛 Issue Tracker](https://github.com/AlloraAi/AlloraCLI/issues) | Bug reports and feature requests | **Bug Reporting** |
-| [📺 Video Tutorials](https://youtube.com/@alloracli) | Step-by-step video guides and demos | **Visual Learning** |
-| [📝 Blog & Best Practices](https://dev.alloracli.com) | Tutorials, case studies, and industry practices | **Advanced Learning** |
-
+| Resource                                                                   | Description                                     | Purpose               |
+| -------------------------------------------------------------------------- | ----------------------------------------------- | --------------------- |
+| [💬 GitHub Discussions](https://github.com/AlloraAi/AlloraCLI/discussions) | Community Q&A, feature requests, showcases      | **Community Support** |
+| [🐛 Issue Tracker](https://github.com/AlloraAi/AlloraCLI/issues)           | Bug reports and feature requests                | **Bug Reporting**     |
+| [📺 Video Tutorials](https://youtube.com/@alloracli)                       | Step-by-step video guides and demos             | **Visual Learning**   |
+| [📝 Blog & Best Practices](https://dev.alloracli.com)                      | Tutorials, case studies, and industry practices | **Advanced Learning** |
 
 ### 🎓 Interactive Learning
 
@@ -182,9 +190,6 @@ allora examples                       # View usage examples
 allora tutorial                       # Interactive tutorial
 ```
 
-
-
-
 ## 🛠️ Installation
 
 ### Prerequisites
@@ -193,9 +198,11 @@ allora tutorial                       # Interactive tutorial
 - Git (for cloning repository)
 
 ### 🪟 Windows Users - Detailed Guide
+
 📖 **[Complete Windows Installation Guide →](WINDOWS_INSTALLATION.md)**
 
 For Windows users, we have a comprehensive step-by-step guide covering:
+
 - Multiple installation methods
 - PATH configuration
 - Troubleshooting common issues
@@ -205,7 +212,7 @@ For Windows users, we have a comprehensive step-by-step guide covering:
 
 Download the latest release from [GitHub Releases](https://github.com/AlloraAi/AlloraCLI/releases):
 
-```bash
+````bash
 # Linux/macOS
 curl -L https://github.com/AlloraAi/AlloraCLI/releases/latest/download/allora-linux-amd64 -o allora
 chmod +x allora
@@ -215,22 +222,25 @@ sudo mv allora /usr/local/bin/
 ```powershell
     # paste link in powershell
     Invoke-WebRequest -Uri "https://github.com/AlloraAi/AlloraCLI/releases/latest/download/allora-windows-amd64.exe" -OutFile "allora.exe"
-     
+
      #run the command
     .\allora.exe -version
              or
     .\allora -version
     #output: "allora version 1.0.0 " congrats you install alloracli
-    
+
     #run command
+
+    .\allora.exe init    # initialize the cli
+    .\allora.exe --help  # help commands
+
     .\allora.exe init
             or
     .\allora init       # initialize the cli
 
     .\allora.exe --help
           or
-    .\allora --help     # help commands
-    
+    .\allora --help     # help command
     # For detailed setup, see WINDOWS_INSTALLATION.md
 
  ```powershell
@@ -242,7 +252,7 @@ sudo mv allora /usr/local/bin/
 git clone https://github.com/AlloraAi/AlloraCLI.git
 cd AlloraCLI
 go build -o allora ./cmd/allora/...
-```
+````
 
 ### Package Managers{coming soon}
 
@@ -294,9 +304,6 @@ allora monitor --provider aws --resource ec2
 # Troubleshoot issues
 allora troubleshoot --service database --issue "high latency"
 ```
-
-
-
 
 ## 💼 Real-World Use Cases
 
@@ -438,10 +445,6 @@ make dev
 </tr>
 </table>
 
-
-
-
-
 ## 💖 Support the Project
 
 If AlloraCLI has been helpful to you, consider:
@@ -450,9 +453,6 @@ If AlloraCLI has been helpful to you, consider:
 - 💰 **Sponsor the project** - Support ongoing development
 - 📢 **Spread the word** - Share with your network
 - 🤝 **Contribute** - Join our contributor community
-
-
-
 
 ## 🏗️ Architecture
 
@@ -482,24 +482,28 @@ AlloraCLI follows a microservices-inspired modular architecture with clear separ
 ```
 
 ### 🔧 Core Components
+
 <hr>
 <details>
 <summary><strong>🖥️ CLI Interface Layer</strong></summary>
 <br>
 
 **Components:**
+
 - **Command Parser**: Cobra-based CLI command structure
 - **Gemini UI**: Interactive web-based interface
 - **Plugin Manager**: Dynamic plugin loading and execution
 - **HTTP Server**: REST API for programmatic access
 
 **Key Features:**
+
 - Command auto-completion and validation
 - Interactive prompts and confirmations
 - Progress indicators and real-time feedback
 - Cross-platform compatibility (Windows, macOS, Linux)
 
 **Code Structure:**
+
 ```
 cmd/
 ├── allora/           # Main CLI entry point
@@ -515,12 +519,14 @@ cmd/
 <br>
 
 **Components:**
+
 - **Natural Language Processor**: Query parsing and intent recognition
 - **Context Manager**: Infrastructure state and history tracking
 - **AI Agent Pool**: Multiple AI providers with failover
 - **Response Generator**: Human-readable output formatting
 
 **AI Providers Supported:**
+
 - OpenAI GPT-4/GPT-3.5
 - Anthropic Claude
 - Google Gemini
@@ -528,8 +534,9 @@ cmd/
 - Custom fine-tuned models
 
 **Processing Pipeline:**
+
 ```
-User Query → Intent Recognition → Context Enrichment → 
+User Query → Intent Recognition → Context Enrichment →
 AI Processing → Response Generation → Output Formatting
 ```
 
@@ -540,17 +547,18 @@ AI Processing → Response Generation → Output Formatting
 <br>
 
 **Unified Interface:**
+
 ```go
 type CloudProvider interface {
     // Resource management
     ListResources(ctx context.Context, filter Filter) ([]Resource, error)
     GetResource(ctx context.Context, id string) (Resource, error)
-    
+
     // Operations
     CreateResource(ctx context.Context, spec ResourceSpec) (Resource, error)
     UpdateResource(ctx context.Context, id string, spec ResourceSpec) (Resource, error)
     DeleteResource(ctx context.Context, id string) error
-    
+
     // Monitoring
     GetMetrics(ctx context.Context, resource string, timeRange TimeRange) (Metrics, error)
     GetLogs(ctx context.Context, resource string, filter LogFilter) ([]LogEntry, error)
@@ -558,6 +566,7 @@ type CloudProvider interface {
 ```
 
 **Provider-Specific Implementations:**
+
 - **AWS Provider**: Complete AWS SDK integration
 - **Azure Provider**: Azure SDK with ARM templates
 - **GCP Provider**: Google Cloud client libraries
@@ -570,6 +579,7 @@ type CloudProvider interface {
 <br>
 
 **Security Features:**
+
 - **Encryption**: AES-256 for credentials at rest
 - **TLS**: All network communications encrypted
 - **Audit Logging**: Comprehensive operation tracking
@@ -577,6 +587,7 @@ type CloudProvider interface {
 - **Secret Management**: Integration with vault systems
 
 **Configuration Management:**
+
 - **Hierarchical Config**: Global → Profile → Environment → Command
 - **Multiple Formats**: YAML, JSON, TOML support
 - **Environment Variables**: Full environment override support
@@ -589,12 +600,14 @@ type CloudProvider interface {
 <br>
 
 **Built-in Monitoring:**
+
 - **Metrics Collection**: Performance and usage metrics
 - **Distributed Tracing**: Request tracing across components
 - **Health Checks**: Component health monitoring
 - **Log Aggregation**: Centralized logging with levels
 
 **Integration Points:**
+
 - **Prometheus**: Metrics export
 - **Grafana**: Dashboard visualization
 - **Jaeger**: Distributed tracing
@@ -628,6 +641,7 @@ type CloudProvider interface {
 ```
 
 **Plugin Types:**
+
 - **Provider Plugins**: Cloud provider extensions
 - **Command Plugins**: Custom commands and operations
 - **UI Plugins**: Interface enhancements
@@ -673,6 +687,7 @@ AlloraCLI/
 ## 🚀 Performance Characteristics
 
 **Performance Metrics:**
+
 - **Cold Start**: < 100ms (binary startup)
 - **Memory Usage**: < 50MB baseline, < 200MB peak
 - **Response Time**: < 2s for most operations
@@ -680,6 +695,7 @@ AlloraCLI/
 - **Resource Support**: 500+ AWS, Azure, and GCP resource types
 
 **Optimization Strategies:**
+
 - **Lazy Loading**: Components loaded on demand
 - **Caching**: Intelligent caching of cloud API responses
 - **Connection Pooling**: Reuse of HTTP connections
@@ -689,8 +705,6 @@ AlloraCLI/
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
 
 ## 📊 Performance & Metrics
 
@@ -818,12 +832,14 @@ type AIAgent interface {
 **Creating Custom Plugins:**
 
 1. **Initialize Plugin Structure:**
+
 ```bash
 allora plugin init my-awesome-plugin
 cd my-awesome-plugin
 ```
 
 2. **Plugin Template:**
+
 ```go
 package main
 
@@ -858,6 +874,7 @@ func main() {
 ```
 
 3. **Build and Test:**
+
 ```bash
 go build -o my-awesome-plugin .
 allora plugin test ./my-awesome-plugin
@@ -873,7 +890,7 @@ allora plugin install ./my-awesome-plugin
 go test ./internal/...          # Test internal packages
 go test ./pkg/...              # Test public packages
 
-# Integration tests  
+# Integration tests
 go test ./tests/integration/... # Integration test suite
 
 # End-to-end tests
@@ -889,22 +906,24 @@ go test -bench=. ./...         # Run benchmarks
 ```
 
 **Test Structure:**
+
 ```go
 func TestCloudProviderAWS(t *testing.T) {
     // Setup
     provider := aws.NewProvider()
     config := testConfig()
-    
+
     // Test authentication
     err := provider.Authenticate(config)
     assert.NoError(t, err)
-    
+
     // Test resource listing
     resources, err := provider.ListResources(context.Background(), Filter{})
     assert.NoError(t, err)
     assert.NotEmpty(t, resources)
 }
 ```
+
 <hr>
 <p align="center">
   Made with ❤️ by <a href="https://github.com/AlloraAi">AlloraAi</a>
