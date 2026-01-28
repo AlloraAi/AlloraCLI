@@ -872,7 +872,7 @@ func (p *MyPlugin) Name() string {
 }
 
 func (p *MyPlugin) Version() string {
-    return "v2.0.0"
+    return "2.0.0"
 }
 
 func (p *MyPlugin) Execute(ctx context.Context, args []string) error {
