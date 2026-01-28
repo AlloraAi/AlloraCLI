@@ -198,7 +198,7 @@ func (t *TroubleshooterImpl) AnalyzeIncident(incident Incident) (*IncidentAnalys
 		},
 		Metadata: map[string]string{
 			"analyzed_by": "ai-troubleshooter",
-			"version":     "1.0.0",
+			"version":     "2.0.0",
 		},
 		Timestamp: time.Now(),
 	}
@@ -323,7 +323,7 @@ func (t *TroubleshooterImpl) RunDiagnostics(options DiagnosticOptions) (*Diagnos
 			},
 		},
 		Metadata: map[string]string{
-			"diagnostics_version": "1.0.0",
+			"diagnostics_version": "2.0.0",
 			"target":              options.Target,
 		},
 		Duration:  time.Since(startTime),

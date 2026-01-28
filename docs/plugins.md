@@ -50,7 +50,7 @@ Create a `plugin.yaml` file:
 
 ```yaml
 name: my-plugin
-version: 1.0.0
+version: 2.0.0
 description: "My custom plugin"
 author: "Your Name"
 main: "./main.go"

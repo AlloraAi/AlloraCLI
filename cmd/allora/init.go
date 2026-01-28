@@ -55,7 +55,7 @@ func runInit(cmd *cobra.Command, args []string) error {
 
 	// Interactive setup
 	cfg := &config.Config{
-		Version: "1.0.0",
+		Version: "2.0.0",
 		Agents:  make(map[string]config.Agent),
 		CloudProviders: config.CloudProviders{
 			AWS:   config.AWSConfig{},
