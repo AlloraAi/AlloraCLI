@@ -112,9 +112,18 @@ function Add-ToPath {
         return
     }
     
-    # Add to PATH
+    # Add to PATH with proper separator handling
     try {
-        $newPath = "$currentPath;$InstallDir"
+        if ([string]::IsNullOrEmpty($currentPath)) {
+            $newPath = $InstallDir
+        }
+        elseif ($currentPath.EndsWith(";")) {
+            $newPath = "$currentPath$InstallDir"
+        }
+        else {
+            $newPath = "$currentPath;$InstallDir"
+        }
+        
         [Environment]::SetEnvironmentVariable("PATH", $newPath, "User")
         Write-Success "Added $InstallDir to PATH"
         Write-Warning "Please restart your terminal for PATH changes to take effect"

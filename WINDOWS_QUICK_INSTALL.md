@@ -50,7 +50,13 @@ Invoke-WebRequest -Uri "https://github.com/AlloraAi/AlloraCLI/releases/latest/do
 ```powershell
 # Add C:\Tools to PATH (run as admin)
 $path = [Environment]::GetEnvironmentVariable("PATH", "Machine")
-[Environment]::SetEnvironmentVariable("PATH", "$path;C:\Tools", "Machine")
+if ([string]::IsNullOrEmpty($path)) {
+    [Environment]::SetEnvironmentVariable("PATH", "C:\Tools", "Machine")
+} elseif ($path.EndsWith(";")) {
+    [Environment]::SetEnvironmentVariable("PATH", "$path`C:\Tools", "Machine")
+} else {
+    [Environment]::SetEnvironmentVariable("PATH", "$path;C:\Tools", "Machine")
+}
 
 # Restart PowerShell, then test
 allora --version
@@ -72,8 +78,13 @@ allora config show
 # Use full path
 C:\Tools\allora.exe --version
 
-# Or add to current session PATH
-$env:PATH += ";C:\Tools"
+# Or add to current session PATH (handles empty PATH correctly)
+$currentPath = $env:PATH
+if ([string]::IsNullOrEmpty($currentPath)) {
+    $env:PATH = "C:\Tools"
+} else {
+    $env:PATH = "$currentPath;C:\Tools"
+}
 ```
 
 ### Permission Issues

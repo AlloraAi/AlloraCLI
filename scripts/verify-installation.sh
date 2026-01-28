@@ -287,8 +287,19 @@ test_shellcheck() {
 test_build_reproducibility() {
     test_start "Test build reproducibility"
     
+    # Determine hash command based on platform
+    if command -v sha256sum &> /dev/null; then
+        HASH_CMD="sha256sum"
+    elif command -v shasum &> /dev/null; then
+        HASH_CMD="shasum -a 256"
+    else
+        log_warn "No hash command available (sha256sum or shasum), skipping hash comparison"
+        test_pass
+        return 0
+    fi
+    
     # Get current binary hash
-    HASH1=$(sha256sum ./bin/allora | cut -d' ' -f1)
+    HASH1=$($HASH_CMD ./bin/allora | cut -d' ' -f1)
     
     # Rebuild
     log_info "Rebuilding binary..."
@@ -296,7 +307,7 @@ test_build_reproducibility() {
     make build &> /dev/null
     
     # Get new hash
-    HASH2=$(sha256sum ./bin/allora | cut -d' ' -f1)
+    HASH2=$($HASH_CMD ./bin/allora | cut -d' ' -f1)
     
     if [ "$HASH1" != "$HASH2" ]; then
         log_info "Note: Build hashes differ (expected due to timestamps)"
