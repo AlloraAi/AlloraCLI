@@ -170,7 +170,7 @@ setup_config() {
     local config_file="$CONFIG_DIR/config.yaml"
     if [[ ! -f "$config_file" ]]; then
         cat > "$config_file" << EOF
-version: "1.0.0"
+version: "2.0.0"
 agents:
   default:
     type: "general"

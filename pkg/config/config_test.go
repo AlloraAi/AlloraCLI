@@ -17,7 +17,7 @@ func TestInitialize(t *testing.T) {
 
 	// Create a test config file
 	configFile := filepath.Join(tmpDir, "config.yaml")
-	testConfig := `version: "1.0.0"
+	testConfig := `version: "2.0.0"
 agents:
   default:
     type: "general"
@@ -50,8 +50,8 @@ security:
 	}
 
 	// Verify configuration values
-	if cfg.Version != "1.0.0" {
-		t.Errorf("Expected version '1.0.0', got '%s'", cfg.Version)
+	if cfg.Version != "2.0.0" {
+		t.Errorf("Expected version '2.0.0', got '%s'", cfg.Version)
 	}
 
 	if len(cfg.Agents) != 1 {
@@ -102,7 +102,7 @@ func TestSaveAndLoad(t *testing.T) {
 
 	// Create test configuration
 	cfg := &Config{
-		Version: "1.0.0",
+		Version: "2.0.0",
 		Agents: map[string]Agent{
 			"test": {
 				Type:        "general",
@@ -213,7 +213,7 @@ func BenchmarkLoad(b *testing.B) {
 	defer os.RemoveAll(tmpDir)
 
 	configFile := filepath.Join(tmpDir, "config.yaml")
-	testConfig := `version: "1.0.0"
+	testConfig := `version: "2.0.0"
 agents:
   default:
     type: "general"

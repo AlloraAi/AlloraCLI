@@ -251,7 +251,7 @@ Invoke-WebRequest -Uri "https://github.com/AlloraAi/AlloraCLI/releases/latest/do
 
 # Run the command
 .\allora.exe --version
-# Output: "allora version 1.0.0"
+# Output: "allora version 2.0.0"
 
 # Initialize the CLI
 .\allora.exe init
@@ -872,7 +872,7 @@ func (p *MyPlugin) Name() string {
 }
 
 func (p *MyPlugin) Version() string {
-    return "v1.0.0"
+    return "2.0.0"
 }
 
 func (p *MyPlugin) Execute(ctx context.Context, args []string) error {

@@ -135,7 +135,7 @@ This allows you to run `allora` from any directory.
    
    Expected output:
    ```
-   allora version 1.0.0 (commit: unknown, date: unknown)
+   allora version 2.0.0 (commit: unknown, date: unknown)
    ```
 
 3. **View available commands:**
