@@ -43,8 +43,10 @@ check_permissions() {
 
 # Detect OS and architecture
 detect_platform() {
-    local os=$(uname -s | tr '[:upper:]' '[:lower:]')
-    local arch=$(uname -m)
+    local os
+    local arch
+    os=$(uname -s | tr '[:upper:]' '[:lower:]')
+    arch=$(uname -m)
     
     case $os in
         linux*)
@@ -100,7 +102,8 @@ get_latest_version() {
 download_binary() {
     local binary_name="$BINARY_NAME-$OS-$ARCH"
     local download_url="https://github.com/$REPO_OWNER/$REPO_NAME/releases/download/$VERSION/$binary_name.tar.gz"
-    local temp_dir=$(mktemp -d)
+    local temp_dir
+    temp_dir=$(mktemp -d)
     local archive_path="$temp_dir/$binary_name.tar.gz"
     
     log_info "Downloading AlloraCLI $VERSION..."
@@ -203,7 +206,7 @@ setup_path() {
             fi
             
             if [[ -n "$shell_profile" ]]; then
-                echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$shell_profile"
+                echo "export PATH=\"\$HOME/.local/bin:\$PATH\"" >> "$shell_profile"
                 log_info "Added $HOME/.local/bin to PATH in $shell_profile"
                 log_info "Please run 'source $shell_profile' or restart your terminal"
             else
@@ -219,7 +222,8 @@ verify_installation() {
     log_info "Verifying installation..."
     
     if command -v "$BINARY_NAME" &> /dev/null; then
-        local version_output=$("$BINARY_NAME" --version 2>&1)
+        local version_output
+        version_output=$("$BINARY_NAME" --version 2>&1)
         log_info "Installation successful!"
         log_info "Version: $version_output"
         

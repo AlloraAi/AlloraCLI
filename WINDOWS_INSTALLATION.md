@@ -17,7 +17,45 @@ Before installing AlloraCLI, ensure you have:
 
 ## 🚀 Installation Methods
 
-### Method 1: Download Pre-built Binary (Recommended)
+### Method 1: Automated Installation (Recommended)
+
+This is the easiest method using PowerShell script.
+
+#### Step 1: Download and Run Installation Script
+
+1. **Open PowerShell** (as Administrator recommended):
+   - Press `Windows + X`
+   - Select "Windows PowerShell (Admin)" or "Terminal (Admin)"
+
+2. **Run the installation script:**
+   ```powershell
+   # Download and run the installation script
+   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/AlloraAi/AlloraCLI/main/scripts/install.ps1" -OutFile "$env:TEMP\install-allora.ps1"
+   
+   # Run the script
+   & "$env:TEMP\install-allora.ps1"
+   ```
+
+3. **The script will automatically:**
+   - Fetch the latest release
+   - Download the binary
+   - Install to `C:\Tools\`
+   - Add to PATH
+   - Create configuration directory
+   - Verify installation
+
+4. **Restart your terminal** to apply PATH changes
+
+#### Step 2: Verify Installation
+
+```powershell
+allora --version
+allora --help
+```
+
+---
+
+### Method 2: Download Pre-built Binary (Manual)
 
 This is the easiest and fastest method for most users.
 

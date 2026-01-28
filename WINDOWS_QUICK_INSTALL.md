@@ -1,6 +1,30 @@
 # 🚀 AlloraCLI Windows Quick Install Reference
 
-## One-Command Installation
+## Automated One-Command Installation (Recommended)
+
+```powershell
+# Download and run the installation script
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/AlloraAi/AlloraCLI/main/scripts/install.ps1" -OutFile "$env:TEMP\install-allora.ps1"; & "$env:TEMP\install-allora.ps1"
+```
+
+This script will:
+- ✅ Download the latest version
+- ✅ Install to `C:\Tools\`
+- ✅ Add to PATH automatically
+- ✅ Create configuration directory
+- ✅ Verify installation
+
+**After installation, restart your terminal and run:**
+```powershell
+allora --version
+allora init
+```
+
+---
+
+## Manual Installation
+
+### One-Command Installation
 
 ```powershell
 # Download to current directory
