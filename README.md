@@ -214,47 +214,61 @@ For Windows users, we have a comprehensive step-by-step guide covering:
 
 Download the latest release from [GitHub Releases](https://github.com/AlloraAi/AlloraCLI/releases):
 
-````bash
-# Linux/macOS
+### Linux
+```bash
+# AMD64 (x86_64)
 curl -L https://github.com/AlloraAi/AlloraCLI/releases/latest/download/allora-linux-amd64 -o allora
 chmod +x allora
 sudo mv allora /usr/local/bin/
 
-## Windows (PowerShell) - Quick Method
-```powershell
-    # paste link in powershell
-    Invoke-WebRequest -Uri "https://github.com/AlloraAi/AlloraCLI/releases/latest/download/allora-windows-amd64.exe" -OutFile "allora.exe"
-
-     #run the command
-    .\allora.exe -version
-             or
-    .\allora -version
-    #output: "allora version 1.0.0 " congrats you install alloracli
-
-    #run command
-
-    .\allora.exe init    # initialize the cli
-    .\allora.exe --help  # help commands
-
-    .\allora.exe init
-            or
-    .\allora init       # initialize the cli
-
-    .\allora.exe --help
-          or
-    .\allora --help     # help command
-    # For detailed setup, see WINDOWS_INSTALLATION.md
-
- ```powershell
+# ARM64 (aarch64)
+curl -L https://github.com/AlloraAi/AlloraCLI/releases/latest/download/allora-linux-arm64 -o allora
+chmod +x allora
+sudo mv allora /usr/local/bin/
 ```
+
+### macOS
+```bash
+# Intel (x86_64)
+curl -L https://github.com/AlloraAi/AlloraCLI/releases/latest/download/allora-darwin-amd64 -o allora
+chmod +x allora
+sudo mv allora /usr/local/bin/
+
+# Apple Silicon (ARM64)
+curl -L https://github.com/AlloraAi/AlloraCLI/releases/latest/download/allora-darwin-arm64 -o allora
+chmod +x allora
+sudo mv allora /usr/local/bin/
+```
+
+### Windows
+```powershell
+# AMD64 (64-bit) - Automated Installation (Recommended)
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/AlloraAi/AlloraCLI/main/scripts/install.ps1" -OutFile "$env:TEMP\install-allora.ps1"
+& "$env:TEMP\install-allora.ps1"
+
+# Or Manual Installation
+Invoke-WebRequest -Uri "https://github.com/AlloraAi/AlloraCLI/releases/latest/download/allora-windows-amd64.exe" -OutFile "allora.exe"
+
+# Run the command
+.\allora.exe --version
+# Output: "allora version 1.0.0"
+
+# Initialize the CLI
+.\allora.exe init
+
+# Get help
+.\allora.exe --help
+```
+
+📖 **For detailed Windows setup, see [WINDOWS_INSTALLATION.md](WINDOWS_INSTALLATION.md)**
 
 ### Install from Source
 
 ```bash
 git clone https://github.com/AlloraAi/AlloraCLI.git
 cd AlloraCLI
-go build -o allora ./cmd/allora/...
-````
+go build -o allora ./cmd/allora
+```
 
 ### Package Managers{coming soon}
 

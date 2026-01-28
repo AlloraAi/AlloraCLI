@@ -122,12 +122,6 @@ tidy:
 	@echo "Tidying dependencies..."
 	go mod tidy
 
-# Install dependencies
-.PHONY: deps
-deps:
-	@echo "Installing dependencies..."
-	go mod download
-
 # Run the application
 .PHONY: run
 run: build
@@ -187,30 +181,3 @@ security:
 bench:
 	@echo "Running benchmarks..."
 	go test -bench=. -benchmem ./...
-
-# Help
-.PHONY: help
-help:
-	@echo "Available targets:"
-	@echo "  build         - Build the application"
-	@echo "  build-windows - Build for Windows"
-	@echo "  build-linux   - Build for Linux"
-	@echo "  build-macos   - Build for macOS"
-	@echo "  build-all     - Build for all platforms"
-	@echo "  clean         - Clean build artifacts"
-	@echo "  test          - Run tests"
-	@echo "  test-coverage - Run tests with coverage"
-	@echo "  lint          - Lint code"
-	@echo "  fmt           - Format code"
-	@echo "  tidy          - Tidy dependencies"
-	@echo "  deps          - Install dependencies"
-	@echo "  run           - Run the application"
-	@echo "  install       - Install the application"
-	@echo "  dev           - Development build"
-	@echo "  release       - Release build"
-	@echo "  docker-build  - Build Docker image"
-	@echo "  docker-run    - Run Docker container"
-	@echo "  docs          - Generate documentation"
-	@echo "  security      - Check for security vulnerabilities"
-	@echo "  bench         - Run benchmarks"
-	@echo "  help          - Show this help"
