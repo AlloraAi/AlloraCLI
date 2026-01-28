@@ -159,7 +159,7 @@ function Setup-Config {
     $configFile = Join-Path $ConfigDir "config.yaml"
     if (-not (Test-Path $configFile)) {
         $configContent = @"
-version: "1.0.0"
+version: "2.0.0"
 agents:
   default:
     type: "general"

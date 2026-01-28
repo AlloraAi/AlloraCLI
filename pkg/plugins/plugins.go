@@ -164,7 +164,7 @@ func (p *DefaultPluginService) InstallPlugin(ctx context.Context, name string, s
 
 	pluginInfo := &PluginInfo{
 		Name:        name,
-		Version:     "1.0.0",
+		Version:     "2.0.0",
 		Description: "Sample plugin",
 		Author:      "AlloraAi",
 		License:     "MIT",
@@ -345,7 +345,7 @@ func (p *DefaultPluginService) loadPlugins() error {
 	samplePlugins := []*PluginInfo{
 		{
 			Name:        "sample-plugin",
-			Version:     "1.0.0",
+			Version:     "2.0.0",
 			Description: "A sample plugin for demonstration",
 			Author:      "AlloraAi",
 			License:     "MIT",
@@ -462,7 +462,7 @@ func (r *LocalPluginRegistry) GetMetadata(name string) (*PluginManifest, error) 
 	// Mock implementation - would fetch metadata from registry
 	return &PluginManifest{
 		Name:        name,
-		Version:     "1.0.0",
+		Version:     "2.0.0",
 		Description: "Sample plugin",
 		Author:      "AlloraAi",
 		License:     "MIT",
