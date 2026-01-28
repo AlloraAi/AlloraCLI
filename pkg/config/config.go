@@ -226,9 +226,16 @@ func GetConfigDir() (string, error) {
 	case "windows":
 		configDir = os.Getenv("APPDATA")
 		if configDir == "" {
-			return "", fmt.Errorf("APPDATA environment variable not set")
+			// Fallback to USERPROFILE if APPDATA is not set
+			userProfile := os.Getenv("USERPROFILE")
+			if userProfile != "" {
+				configDir = filepath.Join(userProfile, "AppData", "Roaming", "alloracli")
+			} else {
+				return "", fmt.Errorf("neither APPDATA nor USERPROFILE environment variables are set")
+			}
+		} else {
+			configDir = filepath.Join(configDir, "alloracli")
 		}
-		configDir = filepath.Join(configDir, "alloracli")
 	default:
 		homeDir, err := os.UserHomeDir()
 		if err != nil {

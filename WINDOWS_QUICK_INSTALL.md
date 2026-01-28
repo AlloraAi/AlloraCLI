@@ -1,6 +1,30 @@
 # 🚀 AlloraCLI Windows Quick Install Reference
 
-## One-Command Installation
+## Automated One-Command Installation (Recommended)
+
+```powershell
+# Download and run the installation script
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/AlloraAi/AlloraCLI/main/scripts/install.ps1" -OutFile "$env:TEMP\install-allora.ps1"; & "$env:TEMP\install-allora.ps1"
+```
+
+This script will:
+- ✅ Download the latest version
+- ✅ Install to `C:\Tools\`
+- ✅ Add to PATH automatically
+- ✅ Create configuration directory
+- ✅ Verify installation
+
+**After installation, restart your terminal and run:**
+```powershell
+allora --version
+allora init
+```
+
+---
+
+## Manual Installation
+
+### One-Command Installation
 
 ```powershell
 # Download to current directory
@@ -26,7 +50,13 @@ Invoke-WebRequest -Uri "https://github.com/AlloraAi/AlloraCLI/releases/latest/do
 ```powershell
 # Add C:\Tools to PATH (run as admin)
 $path = [Environment]::GetEnvironmentVariable("PATH", "Machine")
-[Environment]::SetEnvironmentVariable("PATH", "$path;C:\Tools", "Machine")
+if ([string]::IsNullOrEmpty($path)) {
+    [Environment]::SetEnvironmentVariable("PATH", "C:\Tools", "Machine")
+} elseif ($path.EndsWith(";")) {
+    [Environment]::SetEnvironmentVariable("PATH", "$path`C:\Tools", "Machine")
+} else {
+    [Environment]::SetEnvironmentVariable("PATH", "$path;C:\Tools", "Machine")
+}
 
 # Restart PowerShell, then test
 allora --version
@@ -48,8 +78,13 @@ allora config show
 # Use full path
 C:\Tools\allora.exe --version
 
-# Or add to current session PATH
-$env:PATH += ";C:\Tools"
+# Or add to current session PATH (handles empty PATH correctly)
+$currentPath = $env:PATH
+if ([string]::IsNullOrEmpty($currentPath)) {
+    $env:PATH = "C:\Tools"
+} else {
+    $env:PATH = "$currentPath;C:\Tools"
+}
 ```
 
 ### Permission Issues
